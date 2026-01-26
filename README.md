@@ -1,3 +1,5 @@
+官方网站：https://github.com/electerm/electerm
+
 electerm for nixos
 
 install:
