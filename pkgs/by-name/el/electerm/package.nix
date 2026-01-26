@@ -3,12 +3,12 @@
 
 let
   pname = "electerm";
-  version = "2.3.198";
+  version = "2.4.28";
 
 src = fetchurl {
-  url = "https://gh-proxy.com/https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x86_64.AppImage";
+  url = "https://gh-proxy.com/https://github.com/electerm/electerm/releases/download/v2.4.28/electerm-2.4.28-linux-x86_64.AppImage";
   # 替换为真实的sha256 hash（带sha256-前缀）
-  hash = "sha256-0tHOtfv2LJmoDw6Ozw3gOtGD5uwy9ULIuaxOfqVyTSU=";
+  hash = "sha256-vFShGOtkDMG9J76pjgum2y1gjGRSZYtWmy7dzYAOb/E=";
 };
 
   appimageContents = pkgs.appimageTools.extract {
