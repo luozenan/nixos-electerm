@@ -1,24 +1,20 @@
-官方网站：https://github.com/electerm/electerm
+### 官方网站：https://github.com/electerm/electerm
 
 electerm for nixos
 
-install:
+### install:
 flake inputs:
 
-###
- electerm-github = {
- 
-    url = "github:luozenan/nixos-electerm";
-    
+```nix
+electerm-github = {
+    url = "github:luozenan/nixos-electerm"; 
     inputs.nixpkgs.follows = "nixpkgs";
-  }; 
-###
+}; 
+```
 
-###
+```nix
 environment.systemPackages = [
-
-     inputs.electerm-github.packages.${pkgs.stdenv.hostPlatform.system}.electerm
-     
- ]
-###
+  inputs.electerm-github.packages.${pkgs.stdenv.hostPlatform.system}.electerm
+]
+```
  
